@@ -1,0 +1,9 @@
+--- etc/default/isc-dhcp-server.orig	2020-10-08 23:07:27.264397629 +0200
++++ etc/default/isc-dhcp-server	2020-10-08 23:08:06.608790698 +0200
+@@ -14,5 +14,5 @@
+ 
+ # On what interfaces should the DHCP server (dhcpd) serve DHCP requests?
+ #	Separate multiple interfaces with spaces, e.g. "eth0 eth1".
+-INTERFACESv4=""
++INTERFACESv4="eno1"
+ INTERFACESv6=""

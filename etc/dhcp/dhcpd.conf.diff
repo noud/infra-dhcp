@@ -1,0 +1,14 @@
+--- etc/dhcp/dhcpd.conf.orig	2020-10-08 23:12:07.316000000 +0200
++++ etc/dhcp/dhcpd.conf	2020-10-08 23:13:16.071882259 +0200
+@@ -109,3 +109,11 @@
+ #    range 10.0.29.10 10.0.29.230;
+ #  }
+ #}
++
++# Private network
++subnet 10.128.0.0 netmask 255.255.0.0 {
++#  range 10.128.0.0 10.128.0.254;
++#  option routers 192.168.1.254;
++ option domain-name-servers 10.128.10.11, 10.128.20.12;
++ option domain-name "net1.domain";
++}
