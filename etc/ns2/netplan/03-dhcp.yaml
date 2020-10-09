@@ -3,10 +3,11 @@ network:
     ethernets:
         enp3s0:                               # Private network interface
             renderer: networkd
-            dhcp4: yes
+            optional: true
+            dhcp4: true
             dhcp4-overrides:
                 use-routes: false
-                route-metric: 3
+                # route-metric: 3
                 # networkd
-                use-dns: true
+                use-dns: true                 # @todo resolv.conf
                 use-hostname: false
