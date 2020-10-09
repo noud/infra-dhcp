@@ -1,8 +1,8 @@
 network:
     version: 2
-    renderer: networkd
     ethernets:
         enp3s0:                               # Private network interface
+            renderer: networkd
             dhcp4: yes
             dhcp4-overrides:
                 use-routes: false
