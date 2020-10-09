@@ -5,5 +5,8 @@ network:
         enp3s0:                               # Private network interface
             dhcp4: yes
             dhcp4-overrides:
-                use-dns: true                 # @todo is not set
+                use-routes: false
+                route-metric: 3
+                # networkd
+                use-dns: true
                 use-hostname: false
